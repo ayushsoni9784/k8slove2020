@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: q6svcayush
+  name: q6svcayush
+spec:
+  ports:
+  - name: "9000"
+    port: 9000
+    protocol: TCP
+    targetPort: 9000
+  selector:
+    adhoc: ayushq6
+  type: NodePort
+status:
+  loadBalancer: {}
