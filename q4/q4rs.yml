@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+ name: adhocrsayush4
+ labels:
+  app: rslabel
+
+spec:
+ selector:
+  matchLabels:
+   adhoc: ayushq4
+ replicas: 1
+ template:
+  metadata:
+   name: mypodrs22
+   labels:
+    adhoc: ayushq4
+  spec:
+   containers:
+    - name: ayushc1
+      image: ayushsoni9784/may2020q1:v1
+      ports:
+       - containerPort: 80 
