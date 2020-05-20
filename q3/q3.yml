@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    adhoc: ayushq3
+  name: adhocpodq3
+spec:
+  nodeName: ip-172-31-36-77.ec2.internal 
+  containers:
+  - image: ayushsoni9784/may2020q1:v1
+    name: adhocpodq3
+    ports:
+    - containerPort: 80
+    env:
+     - name: x
+       value: app2
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
