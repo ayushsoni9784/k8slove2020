@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: q4svcayush
+  name: q4svcayush
+spec:
+  ports:
+  - name: "80"
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    adhoc: ayushq4
+  type: LoadBalancer
+status:
+  loadBalancer: {}
